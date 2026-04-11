@@ -43,7 +43,7 @@ This is my Hackintosh setup running macOS Tahoe 26.4 on AMD Ryzen 3 2200G with R
 
 ## Screenshot
 
-![Hackintosh Setup Screenshot]<img width="1920" height="1080" alt="ss" src="https://github.com/user-attachments/assets/cd977be5-3015-4b15-a963-fd01384578ba" />
+<img width="1920" height="1080" alt="ss" src="https://github.com/user-attachments/assets/cd977be5-3015-4b15-a963-fd01384578ba" />
 
 
 *Last Updated: April 2026*
