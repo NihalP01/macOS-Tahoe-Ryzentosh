@@ -8,11 +8,35 @@
             <array>
                 <dict>
                     <key>Comment</key>
-                    <string>SSDT-EC-USBX-DESKTOP.aml</string>
+                    <string></string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>SSDT-EC-USBX-DESKTOP.aml</string>
+                    <string>SSDT-EC.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-PLUG.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-USBX.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-USB-Reset.aml</string>
                 </dict>
             </array>
             <key>Delete</key>
@@ -153,16 +177,14 @@
         <dict>
             <key>Add</key>
             <dict>
-                <key>PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x6)</key>
+                <key>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Internal@0,8,1/0,6</string>
-                    <key>PP_DisablePowerContainment</key>
-                    <data>AQAAAA==</data>
+                    <string>Internal@0,1,1/0,0</string>
                     <key>device_type</key>
                     <string>VGA compatible controller</string>
                     <key>model</key>
-                    <string>Ellesmere [Radeon RX 470/480/570/570X/580/580X/590]</string>
+                    <string>Radeon RX 570 4GB</string>
                 </dict>
             </dict>
             <key>Delete</key>
@@ -216,7 +238,7 @@
                     <key>Comment</key>
                     <string>V1.7.0</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/WhateverGreen</string>
                     <key>MaxKernel</key>
@@ -370,6 +392,42 @@
                     <key>PlistPath</key>
                     <string>Contents/Info.plist</string>
                 </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>UTBMap.kext</string>
+                    <key>Comment</key>
+                    <string>V1.1</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string></string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>USBToolBox.kext</string>
+                    <key>Comment</key>
+                    <string>V1.2.0</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/USBToolBox</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
             </array>
             <key>Block</key>
             <array/>
@@ -380,7 +438,7 @@
                 <key>Cpuid1Mask</key>
                 <data></data>
                 <key>DummyPowerManagement</key>
-                <true/>
+                <false/>
                 <key>MaxKernel</key>
                 <string></string>
                 <key>MinKernel</key>
@@ -1286,7 +1344,7 @@
                 <key>SysReport</key>
                 <false/>
                 <key>Target</key>
-                <integer>3</integer>
+                <integer>0</integer>
             </dict>
             <key>Entries</key>
             <array/>
@@ -1383,7 +1441,7 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>-wegnoigpu radpg=15</string>
+                    <string>radpg=15</string>
                     <key>csr-active-config</key>
                     <data>AwoAAA==</data>
                     <key>prev-lang:kbd</key>
